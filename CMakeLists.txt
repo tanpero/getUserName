@@ -7,3 +7,6 @@ add_library (getUserName STATIC
 )
 
 target_include_directories (getUserName PUBLIC src)
+
+add_executable(getUserName-test test/main.cc)
+target_link_libraries(getUserName-test getUserName)
